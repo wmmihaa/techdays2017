@@ -1,0 +1,1 @@
+"C:\Debugtools\pscp.exe" -i ".\ssh\dell.ppk" * admin@192.168.137.143:/home/admin/techdays2017/
