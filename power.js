@@ -37,16 +37,16 @@ function readRegister() {
                 console.log("ERROR: " + JSON.stringify(err));
             }
             else {
-   var myint = new Int16Array(2);
+                var myint = new Int16Array(2);
 
                 myint[0] = data.data[0];
                 myint[1] = data.data[1];
 
-                var myfloat = new Float32Array( myint.buffer );
+                var myfloat = new Float32Array(myint.buffer);
 
-                console.log( myfloat[0]*1000 + " W" );
+                console.log(myfloat[0] * 1000 + " W");
                 console.log('');
-                
+
             }
         });
     }, 1000);
